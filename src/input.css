@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url("fonts/OpenSans-CondLight.ttf");
+}
+
+::-webkit-scrollbar {
+    width:6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #DEDEDE;
+    -webkit-border-radius: 0x;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    background: #98C6EA; 
+}
