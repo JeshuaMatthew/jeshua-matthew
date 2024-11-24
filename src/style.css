@@ -628,26 +628,6 @@ video {
   margin-top: 3.35rem;
 }
 
-.mt-96 {
-  margin-top: 24rem;
-}
-
-.mt-\[800px\] {
-  margin-top: 800px;
-}
-
-.mt-\[400px\] {
-  margin-top: 400px;
-}
-
-.mt-\[600px\] {
-  margin-top: 600px;
-}
-
-.mt-\[500px\] {
-  margin-top: 500px;
-}
-
 .mt-\[450px\] {
   margin-top: 450px;
 }
@@ -923,10 +903,6 @@ video {
   gap: 35px;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .self-start {
   align-self: flex-start;
 }
@@ -979,6 +955,11 @@ video {
   border-color: rgb(246 246 246 / var(--tw-border-opacity, 1));
 }
 
+.bg-\[\#00338D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 51 141 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#1E49E2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(30 73 226 / var(--tw-bg-opacity, 1));
@@ -997,16 +978,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#00338D\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 51 141 / var(--tw-bg-opacity, 1));
 }
 
 .bg-hero-bg {
@@ -1066,10 +1037,6 @@ video {
   padding: 20px;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1078,6 +1045,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-8 {
@@ -1095,21 +1067,6 @@ video {
   padding-bottom: 5px;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1120,6 +1077,10 @@ video {
 
 .pb-\[14px\] {
   padding-bottom: 14px;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pl-\[0\.25\%\] {
@@ -1148,10 +1109,6 @@ video {
 
 .pt-\[7\%\] {
   padding-top: 7%;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .text-center {
@@ -1435,16 +1392,16 @@ video {
 }
 
 @media (max-width: 640px) {
+  .mobile\:flex {
+    display: flex;
+  }
+
   .mobile\:hidden {
     display: none;
   }
 
   .mobile\:h-14 {
     height: 3.5rem;
-  }
-
-  .mobile\:h-full {
-    height: 100%;
   }
 
   .mobile\:h-\[500px\] {
@@ -1487,9 +1444,5 @@ video {
 
   .mobile\:bg-hero-bg-mobile {
     background-image: url('img/ceoBannerMobile.webp');
-  }
-
-  .mobile\:p-0 {
-    padding: 0px;
   }
 }
