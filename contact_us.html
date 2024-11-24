@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c121f5569d.js" crossorigin="anonymous"></script>
+    <title>KPMG Indonesia - KPMG Indonesia</title>
+
+</head>
+<body class="font-openSans">
+    <nav class="fixed w-full bg-white shadow-md shadow-gray-700/50 pb-1 z-20">
+
+        <section class="flex flex-row max-w-[95.4%] mx-auto justify-between items-end h-14">
+
+            <a class="hidden laptop:flex self-center text-3xl text-[#00338D]" onclick="showMenus()"><i class="fa-solid fa-bars"></i></a>
+            <a class="w-[6.75rem] self-start pt-[6px] laptop:mx-auto" href="#"><img src="src/img/kpmg-logo.jpeg" alt="kpmg logo"></a>
+            <ul class="flex flex-row gap-10 font-openSans text-[#00338D] text-xl laptop:hidden">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Events</a></li>
+            </ul>
+            
+            <div class="flex flex-row gap-6 mb-2.5 mr-2.5 laptop:hidden">
+                <a href="#"><img class="w-5 h-5" src="src/img/searchLogo.png" alt="searchLogo"></a>
+                <a href="#"><img class="w-5 h-5" src="src/img/languangeLogo.png" alt="languangeLogo"></a>
+            </div>
+            
+        </section>
+    </nav>
+
+    <ul id="bar-menus" class="fixed w-full z-10 bg-white translate-y-[-100%] flex-col transition-all duration-500">
+        <li class="py-5 pl-2 text-xl border-b-[1px] border-solid border-[#333] hover:underline"><a href="index.html">Home</a></li>
+        <li class="py-5 pl-2 text-xl border-b-[1px] border-solid border-[#333] hover:underline"><a href="biodata.html">Biodata</a></li>
+        <li class="py-5 pl-2 text-xl border-b-[1px] border-solid border-[#333] hover:underline"><a href="contact_us.html">Contact Us</a></li>
+        <li class="py-5 pl-2 text-xl border-b-[1px] border-solid border-[#333] hover:underline"><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+
+    <main>
+        <div class="max-w-[500px] mobile:max-w-[90%] py-28 mx-auto">
+            <form class="flex flex-col gap-5 border-[5px_solid_#1E49E2] bg-[#f6f6f6] p-[25px_15px]  shadow-[100px_-100px_1px_#062a74]" action="process.php" method="get" target="_blank">
+                <h1 class="italic text-white text-center font-semibold bg-[#062a74]">Contact Us</h1>
+                <input class="py-2 border-none border-b-[2px_solid_#063696] outline-none text-[#292929] bg-[#f6f6f6] font-semibold" type="text" id="firstname" name="firstname" placeholder="First Name">
+                <input class="py-2 border-none border-b-[2px_solid_#063696] outline-none text-[#292929] bg-[#f6f6f6] font-semibold" type="text" id="familyname" name="familyname" placeholder="Family Name">
+                <input class="py-2 border-none border-b-[2px_solid_#063696] outline-none text-[#292929] bg-[#f6f6f6] font-semibold" type="text" id="email" name="email" placeholder="Email">
+                <input class="py-2 border-none border-b-[2px_solid_#063696] outline-none text-[#292929] bg-[#f6f6f6] font-semibold" type="text" id="username" name="username" placeholder="User Name">
+                <input class="py-2 border-none border-b-[2px_solid_#063696] outline-none text-[#292929] bg-[#f6f6f6] font-semibold" type="password" id="password" name="password"placeholder="Password">
+                <div class="flex text-[#0a59a3] font-semibold text-[15px] pb-1 justify-between border-b-[2px_solid_#0a59a3]">
+                    <p>Gender : </p>
+                        <div class="w-40 flex justify-between">
+                            <label for="male">
+                                <input type="radio" id="male" name="gender" value="male">
+                                Male
+                            </label>
+        
+                            <label class="radio">
+                                <input type="radio" id="female" name="gender" value="female">
+                                Female
+                            </label>
+                        </div>
+                        
+                    
+                </div>
+                <div class="flex text-[#0a59a3] font-semibold text-[15px] pb-1 justify-between border-b-[2px_solid_#0a59a3]">
+                    <label for="birthdate">Date of Birth :</label>
+                    <input class="w-28 border-none outline-none bg-[#f6f6f6] text-[#0a59a3] font-semibold italic" type="date" id="birthdate" name="birthdate">
+                </div>
+                <div class="flex text-[#0a59a3] font-semibold text-[15px] pb-1 justify-between border-b-[2px_solid_#0a59a3]">
+                    <label for="religion">Religion : </label>
+                    <select class="w-36 border-none outline-none bg-[#f6f6f6] text-[#0a59a3] font-semibold italic" name="religion" id="religion">
+                        <option value="SDA">Seven Day Adventist</option>
+                        <option value="protestant">Protestant</option>
+                        <option value="catholic">Catholic</option>
+                        <option value="muslim">Muslim</option>
+                        <option value="buddist">Buddist</option>
+                        <option value="hindu">Hindu</option>
+                    </select>
+                </div>
+                <textarea class="py-2 border-none border-b-[2px_solid_#063696] outline-none text-[#292929] bg-[#f6f6f6] font-semibold" name="address" id="address" placeholder="Address"></textarea>
+                <div class="flex flex-col border-b-[2px_solid_#0a59a3] text-[#0a59a3] font-semibold italic">
+                    <a>Select Your Hobbies : </a>
+                    <label class="checkbox">
+                        <input type="checkbox" id="reading" name="reading" value="reading">
+                        Reading 
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox" id="travelling" name="travelling" value="travelling">
+                        Travelling
+                    </label>
+                    
+                    
+                    <label class="checkbox">
+                        <input type="checkbox" id="coding" name="coding" value="coding">
+                        Coding 
+                    </label>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox" id="drawing" name="drawing" value="drawing">
+                        Drawing 
+                    </label>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox" id="running" name="running" value="running">
+                        Running  
+                    </label>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox" id="rock" name="rock" value="rock">
+                        Rock Climbing
+                    </label>
+                    
+                </div>
+                <input class="w-4/12 mx-auto border-none bg-[#1E49E2] p-3 text-white font-semibold transition-all duration-100 hover:bg-white hover:text-[#1E49E2] hover:outline-[2px_solid_#1E49E2]" type="submit" value="Save" >
+            </form>
+        </div>
+    </main>
+    <footer class="border-t-[10px] border-solid border-[#1E49E2]">
+        <div class="footer-wrapper">
+            <div class="border-b-[1px] border-solid border-[#f6f6f6] laptop:hidden">
+                <div class="w-[95%] mx-auto py-3">
+                    <a class="pr-10 text-xl text-[#666] hover:underline" href="#">Legal</a>
+                    <a class="pr-10 text-xl text-[#666] hover:underline" href="#">Privacy</a>
+                    <a class="pr-10 text-xl text-[#666] hover:underline" href="#">Accessibility</a>
+                    <a class="pr-10 text-xl text-[#666] hover:underline" href="#">Sitemap</a>
+                    <a class="pr-10 text-xl text-[#666] hover:underline" href="#">Help</a>
+                    <a class="pr-10 text-xl text-[#666] hover:underline" href="#">Glossary</a>
+                </div>
+
+            </div>
+
+            <div class="grid grid-rows-[50%_50%] h-[300px] mobile:h-[700px]">
+                <div class="w-[95%] mx-auto grid grid-cols-[85.5%_15.5%] pt-[30px] laptop:hidden">
+                    <div class="grid w-[65%] grid-cols-[30%_30%_30%]">
+                        <ul>
+                            <li class="pb-[14px]"><a href="https://fti.unai.edu/" class="text-[#063696] text-xl">FTI UNAI</a></li>
+                            <li class="pb-[14px]"><a class="text-[#666] text-[1.02em]" href="#">Office location</a></li>
+                            <li class="pb-[14px]"><a class="text-[#666] text-[1.02em]" href="#">Contact us</a></li>
+                        </ul>
+    
+                        <ul>
+                            <li class="pb-[14px]"><a href="https://fti.unai.edu/" class="text-[#063696] text-xl">UNAI</a></li>
+                            <li class="pb-[14px]"><a class="text-[#666] text-[1.02em]" href="#">Press release</a></li>
+                        </ul>
+        
+                        <ul>
+                            <li class="pb-[14px]"><a href="https://jurnal.unai.edu/index.php/teika" class="text-[#063696] text-xl">Jurnal Teika</a></li>
+                            <li class="pb-[14px]"><a class="text-[#666] text-[1.02em]" href="#">Contact alumni</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="grid grid-rows-[50%_50%] items-start justify-center">
+                        <h3 class="text-[#063696] font-semibold font-OpenSans-Condensed text-3xl">Request for proposal</h3>
+                        <a class="text-center p-[12px_55px] bg-[#1E49E2] text-white text-xl font-semibold" href="#">Submit RFP</a>
+                    </div>
+                </div>
+
+                <ul class="hidden laptop:grid grid-cols-[50%_50%] grid-rows-[15%,repeat(13,7.5%)] text-center h-fit mt-10">
+                    <li class="col-span-2 bg-[#1E49E2] text-white font-semibold hover:underline py-8 flex items-center justify-center"><a href="#">Submit RFP <span class="fa-solid fa-chevron-right"></span></a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Legal</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Privacy</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Accessibility</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Sitemap</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Help</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Glossary</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="https://fti.unai.edu/">FTI UNAI</a></li>        
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="https://unai.edu/">UNAI</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="https://jurnal.unai.edu/index.php/teika">Jurnal Teika</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Office location</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Contact us</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Press release</a></li>
+                    <li class="py-4 grid justify-center content-center text-[#00338d] text-[1.125rem] hover:underline border-solid border border-[#f0f0f0]"><a href="#">Contact alumni</a></li>
+                </ul>
+
+                
+            
+                <div class="bg-[#DEDEDE] pt-[30px] h-[90%] mt-[2%] laptop:mt-[28%]">
+                    <div class="w-[95%] mx-auto grid grid-rows-[55%_45%] text-[0.88rem] text-[#333] h-[100%]">
+                        <p>© 2024 Siddharta Widjaja & Rekan – Registered Public Accountants, an Indonesian partnership and a member firm of the KPMG global organization of independent member firms affiliated with KPMG International Limited, a private English company limited by guarantee. All rights reserved.</p>
+                        <p>For more details about the structure of the KPMG global organization please visit <a class="text-[#0a59a3] hover:underline" href="https://kpmg.com/governance">https://kpmg.com/governance</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
